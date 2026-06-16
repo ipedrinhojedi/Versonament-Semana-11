@@ -1,0 +1,18 @@
+#REGISTRO DA SEMANA 11
+# Feature Flags
+habilitar_cupom_desconto = false
+habilitar_pagamento_pix = false
+ 
+def renderizar_tela_de_pagamento():
+ 
+    # Campo de cupom
+    if habilitar_cupom_desconto:
+        print("mostrar campo: Cupom de Desconto")
+ 
+        #Forma de pagamento
+        if habilitar_pagameno_pix:
+            print("Mostrar botão: Pagar com PIX")
+        else:
+            print("Mostrar botão: Pagar com Cartão")
+ 
+renderizar_tela_de_pagamento()
